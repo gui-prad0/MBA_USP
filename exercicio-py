@@ -1,0 +1,21 @@
+#Vendas do primeiro semestre de 2024
+vendas = [22,32,42,55,57,60] 
+
+#lista das vendas do primeiro trimestre
+vendas_primeiro_trimestre = vendas [:3] 
+
+#lista das vendas do segundo trimestre
+vendas_segundo_trimestre = vendas [3:] 
+
+# Criar um programa com if/else que mostra se as vendas aumentaram ao longo do ano
+media_primeiro_trimestre = sum(vendas_primeiro_trimestre) / len(vendas_primeiro_trimestre)
+media_segundo_trimestre = sum(vendas_segundo_trimestre) / len(vendas_segundo_trimestre)
+
+if media_segundo_trimestre > media_primeiro_trimestre:
+    print("As vendas aumentaram ao longo do ano.")
+else:
+    print("As vendas não aumentaram ao longo do ano.")
+
+print()
+print("Tudo certo, professor?")
+
